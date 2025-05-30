@@ -1,0 +1,337 @@
+{
+  "files": [
+    {
+      "data_category": "Sequencing Reads",
+      "data_format": "BAM",
+      "data_type": "Aligned Reads",
+      "experimental_strategy": "WGS",
+      "file_name": "_1_MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48.final.bam",
+      "file_size": 279538421589,
+      "id": "872cae96-39c8-4b47-8527-9a92a92e066c",
+      "local_file_path": "_1_MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48.final.bam",
+      "md5sum": "cfb61dcf25688410ff16d4aa6c76f6c9",
+      "proc_internal": null,
+      "project_id": "MP2PRT-EC",
+      "read_groups": [
+        {
+          "id": "c5db2262-3710-454d-b33f-9acb5cc8038f",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H33MCDSX5_L001"
+        },
+        {
+          "id": "495ae392-93eb-457e-8576-22c559c68ca9",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H33MCDSX5_L002"
+        },
+        {
+          "id": "e4f73f26-5119-446b-91b1-fc1781868cae",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H33MCDSX5_L003"
+        },
+        {
+          "id": "225c0ce6-06dd-4990-b516-9be4175d16fd",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H33MCDSX5_L004"
+        },
+        {
+          "id": "3aa1e108-e00e-4278-8bdf-3dc5d5e4db7a",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H53YFDSX5_L001"
+        },
+        {
+          "id": "a6efff86-a349-450b-91ec-87edaa4a7254",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H53YFDSX5_L002"
+        },
+        {
+          "id": "f44b0b43-d47e-4710-9e56-d89b72f8bf14",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H53YFDSX5_L003"
+        },
+        {
+          "id": "72f793d9-7188-46e9-8de5-9fbe7add7640",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H53YFDSX5_L004"
+        },
+        {
+          "id": "5cdd61e7-687d-4474-a803-ed3e2e17f0c2",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H5MN3DSX5_L001"
+        },
+        {
+          "id": "0a983bf0-b27e-41ae-90a7-18845a043312",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H5MN3DSX5_L002"
+        },
+        {
+          "id": "4728519d-447f-49e7-b2b7-27638970a07c",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H5MN3DSX5_L003"
+        },
+        {
+          "id": "349d4876-f0d5-4d4d-af38-293b4f0fa17d",
+          "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48_GTCTACAC-ACCTTGGC_H5MN3DSX5_L004"
+        }
+      ],
+      "submitter_id": "MP2PRT-GAAXSL-NT1-A-1-0-D-A93A-48.final.bam",
+      "type": "submitted_aligned_reads"
+    },
+    {
+      "data_category": "Sequencing Reads",
+      "data_format": "BAM",
+      "data_type": "Aligned Reads",
+      "experimental_strategy": "WGS",
+      "file_name": "_1_MP2PRT-GAALBH-NT1-A-1-0-D-A941-48.final.bam",
+      "file_size": 357971149893,
+      "id": "c149cad6-d80b-480b-a32c-f2c23a7950b0",
+      "local_file_path": "_1_MP2PRT-GAALBH-NT1-A-1-0-D-A941-48.final.bam",
+      "md5sum": "71b037fd7b4e9d644f9a4bfcda9d9e1b",
+      "proc_internal": null,
+      "project_id": "MP2PRT-EC",
+      "read_groups": [
+        {
+          "id": "8593ac4f-87cc-483a-9609-c546cbb433e0",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HNMMLDSX5_L001"
+        },
+        {
+          "id": "7986b621-7c73-4be4-a1b9-1957749af10e",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HNMMLDSX5_L002"
+        },
+        {
+          "id": "658637cb-5b47-4c8b-83fd-c68242afe2f3",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HNMMLDSX5_L003"
+        },
+        {
+          "id": "e11f6861-5f6d-4202-afac-463455878a95",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HNMMLDSX5_L004"
+        },
+        {
+          "id": "004a029d-6802-4df0-b10e-055feea6974b",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HNNYMDSX5_L001"
+        },
+        {
+          "id": "41ab0eaa-fb1b-4e62-ac77-fc991d4be030",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HNNYMDSX5_L002"
+        },
+        {
+          "id": "cc646669-ee97-40af-a775-6ec3e194171b",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HNNYMDSX5_L003"
+        },
+        {
+          "id": "2c004f5f-fa1a-4fbd-83fb-087ff479d93d",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HNNYMDSX5_L004"
+        },
+        {
+          "id": "c634b485-8fc8-4b09-9afd-99bbb3a67b1f",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HVFNWDSX5_L001"
+        },
+        {
+          "id": "895c50be-0d19-4e9b-b53e-5d2d771c4f1c",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HVFNWDSX5_L002"
+        },
+        {
+          "id": "d98cefb1-286e-49a9-b179-dc8247b381ef",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HVFNWDSX5_L003"
+        },
+        {
+          "id": "d63f1c4a-7d73-4f1e-9e7d-ef5d58bb317f",
+          "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48_GCGCAAGC-CGGCGTGA_HVFNWDSX5_L004"
+        }
+      ],
+      "submitter_id": "MP2PRT-GAALBH-NT1-A-1-0-D-A941-48.final.bam",
+      "type": "submitted_aligned_reads"
+    },
+    {
+      "data_category": "Sequencing Reads",
+      "data_format": "BAM",
+      "data_type": "Aligned Reads",
+      "experimental_strategy": "WGS",
+      "file_name": "_2_MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48.final.bam",
+      "file_size": 273349862705,
+      "id": "ce05d7cd-f19c-4ba7-a200-fb48b00f03af",
+      "local_file_path": "_2_MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48.final.bam",
+      "md5sum": "e271c95dbaab7633fda04d988d4230c5",
+      "proc_internal": null,
+      "project_id": "MP2PRT-EC",
+      "read_groups": [
+        {
+          "id": "e34d6c93-3141-4e5f-b31f-48017daae80a",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HCV7HDSXC_L001"
+        },
+        {
+          "id": "9eb1494e-dd69-416e-83bb-278148186ba3",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HCV7HDSXC_L002"
+        },
+        {
+          "id": "ebc04067-ed99-4b6f-9bb7-317a659e37df",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HCV7HDSXC_L003"
+        },
+        {
+          "id": "7bafc090-775c-4b83-8a0b-19681b985b5c",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HCV7HDSXC_L004"
+        },
+        {
+          "id": "7de47595-2b2b-4c3b-b41a-1c51a82bac66",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HFNYCDSXC_L001"
+        },
+        {
+          "id": "ff1274fc-5eb5-423f-ad3d-f880a00f4abf",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HFNYCDSXC_L002"
+        },
+        {
+          "id": "3e0a54e1-af9c-4e1e-9fa0-001c0a6ca507",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HFNYCDSXC_L003"
+        },
+        {
+          "id": "b69a3ca0-5a7c-4523-848d-7dcd79923503",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HFNYCDSXC_L004"
+        },
+        {
+          "id": "87f180c6-8a6f-47d0-8fb3-b3239be034a7",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HFTTHDSXC_L001"
+        },
+        {
+          "id": "33637735-16b4-4074-91cd-5e8396875ada",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HFTTHDSXC_L002"
+        },
+        {
+          "id": "829c9807-5a41-47f4-9455-671b8e5c74f2",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HFTTHDSXC_L003"
+        },
+        {
+          "id": "2b72cc57-1875-4fc4-ac93-1111956731c5",
+          "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48_CGGAACTG-TCGTAGTG_HFTTHDSXC_L004"
+        }
+      ],
+      "submitter_id": "MP2PRT-GAAAEY-NT2-A-1-0-D-A96J-48.final.bam",
+      "type": "submitted_aligned_reads"
+    },
+    {
+      "data_category": "Sequencing Reads",
+      "data_format": "BAM",
+      "data_type": "Aligned Reads",
+      "experimental_strategy": "WGS",
+      "file_name": "_1_MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48.final.bam",
+      "file_size": 237248663390,
+      "id": "f002099e-4091-4c88-b7d2-4f4bd6c58617",
+      "local_file_path": "_1_MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48.final.bam",
+      "md5sum": "ed0255c83e83a844e4557ec93adcf3a6",
+      "proc_internal": null,
+      "project_id": "MP2PRT-EC",
+      "read_groups": [
+        {
+          "id": "fc49b991-01ff-419c-bf03-45cacad40080",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H33MCDSX5_L001"
+        },
+        {
+          "id": "f539eefb-5e8a-4dde-8df4-54e29dc48877",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H33MCDSX5_L002"
+        },
+        {
+          "id": "dee08ff0-9394-405e-8a09-637e677e8b77",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H33MCDSX5_L003"
+        },
+        {
+          "id": "5d5c521f-5cdc-423d-88b2-a6f36918c927",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H33MCDSX5_L004"
+        },
+        {
+          "id": "8302f570-4fd0-4f80-b08b-84b2635322b1",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H52WFDSX5_L001"
+        },
+        {
+          "id": "fef94feb-421f-4325-ac68-a42fb4541708",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H52WFDSX5_L002"
+        },
+        {
+          "id": "7e7cb8d8-5415-43fb-a287-ecedee5c2487",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H53YFDSX5_L001"
+        },
+        {
+          "id": "6f921308-fdf7-434a-bf37-b8e847ad6119",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H53YFDSX5_L002"
+        },
+        {
+          "id": "b138cd63-0368-4dc5-920e-e5b0fa5c1313",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H53YFDSX5_L003"
+        },
+        {
+          "id": "04625e3a-cafd-4f90-a36f-4d7e848e3876",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H53YFDSX5_L004"
+        },
+        {
+          "id": "00d4a8bc-a8c0-4132-807e-2fec38d5d35b",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H5MN3DSX5_L001"
+        },
+        {
+          "id": "1541b453-66f0-4c96-ad42-d9365e106de7",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H5MN3DSX5_L002"
+        },
+        {
+          "id": "967d53b7-3757-475a-8bd1-d95d3a5be13e",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H5MN3DSX5_L003"
+        },
+        {
+          "id": "4524637c-b8b9-4c6a-ad61-6dd1bed69a57",
+          "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48_GTGTCGGA-GCGCAAGC_H5MN3DSX5_L004"
+        }
+      ],
+      "submitter_id": "MP2PRT-GAAEYL-NT1-A-1-0-D-A93A-48.final.bam",
+      "type": "submitted_aligned_reads"
+    },
+    {
+      "data_category": "Sequencing Reads",
+      "data_format": "BAM",
+      "data_type": "Aligned Reads",
+      "experimental_strategy": "WGS",
+      "file_name": "_1_MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48.final.bam",
+      "file_size": 335274571734,
+      "id": "fc2860eb-cd7c-40f8-911f-99cc6d07410e",
+      "local_file_path": "_1_MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48.final.bam",
+      "md5sum": "7fd9b6786aec0ca3e82cee9ef0da2786",
+      "proc_internal": null,
+      "project_id": "MP2PRT-EC",
+      "read_groups": [
+        {
+          "id": "e0216473-1299-4e24-871f-bfd886b9410d",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HT2HGDSX5_L001"
+        },
+        {
+          "id": "6810bda4-764d-4da9-8b68-478630126862",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HT2HGDSX5_L002"
+        },
+        {
+          "id": "2670f294-2ff4-4ed9-aade-7eec11681b40",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HT2HGDSX5_L003"
+        },
+        {
+          "id": "a7ca1fe2-6f7d-41f6-a269-d323d8b64ebf",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HT2HGDSX5_L004"
+        },
+        {
+          "id": "9093e9bf-882d-42df-83f0-b8529329cdcc",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HVFKKDSX5_L001"
+        },
+        {
+          "id": "47710af6-ee87-42ba-bb80-ce27c4e06216",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HVFKKDSX5_L002"
+        },
+        {
+          "id": "ea2dd02d-456f-44c4-8d50-cb41d59fff18",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HVFKKDSX5_L003"
+        },
+        {
+          "id": "2b621a84-db3f-472a-afc2-13e077a747c4",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HVFKKDSX5_L004"
+        },
+        {
+          "id": "b45a26c7-31f6-4a41-b4bc-fa0ddb07b977",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HVGKLDSX5_L001"
+        },
+        {
+          "id": "4896af79-b73d-482f-9d0a-07798a68f2ed",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HVGKLDSX5_L002"
+        },
+        {
+          "id": "343a5d96-645c-468a-9b4a-e4261910c899",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HVGKLDSX5_L003"
+        },
+        {
+          "id": "3f13db5d-2327-4ade-8e98-5a46a941c36f",
+          "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48_CACGAGCG-TGGCAGAT_HVGKLDSX5_L004"
+        }
+      ],
+      "submitter_id": "MP2PRT-GAARGZ-NT1-A-1-0-D-A942-48.final.bam",
+      "type": "submitted_aligned_reads"
+    }
+  ]
+}

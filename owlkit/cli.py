@@ -232,13 +232,15 @@ def sbpack():
 
 
 @sbpack.command()
-@click.option('--token', '-t', help='CGC authentication token')
+@click.option('--token', '-t', help='Authentication token')
 @click.option('--force-new', is_flag=True, help='Force new token input even if one is stored')
-def login(token, force_new):
-    """Login to Cancer Genomics Cloud and store credentials."""
+@click.option('--platform', '-p', default='cgc', help='Seven Bridges platform (cgc, sbg-us, sbg-eu, biodata-catalyst, cavatica)')
+@click.option('--non-interactive', is_flag=True, help='Run in non-interactive mode (no prompts)')
+def login(token, force_new, platform, non_interactive):
+    """Login to a Seven Bridges platform and store credentials."""
     manager = SBPackManager()
     
-    if not manager.login_to_cgc(token, force_new):
+    if not manager.login_to_platform(platform, token, force_new, non_interactive):
         raise click.Abort()
 
 
@@ -274,28 +276,33 @@ def pack(cwl_file, output, validate):
 @click.argument('packed_file')
 @click.argument('project_id')
 @click.argument('app_name')
-@click.option('--token', '-t', help='CGC authentication token')
-def deploy(packed_file, project_id, app_name, token):
-    """Deploy a packed workflow to Cancer Genomics Cloud."""
+@click.option('--token', '-t', help='Authentication token')
+@click.option('--platform', '-p', default='cgc', help='Seven Bridges platform (cgc, sbg-us, sbg-eu, biodata-catalyst, cavatica)')
+@click.option('--non-interactive', is_flag=True, help='Run in non-interactive mode (no prompts)')
+def deploy(packed_file, project_id, app_name, token, platform, non_interactive):
+    """Deploy a packed workflow to a Seven Bridges platform."""
     manager = SBPackManager()
     
-    if not manager.deploy_to_cgc(packed_file, project_id, app_name, token):
+    if not manager.deploy_to_cgc(packed_file, project_id, app_name, token, platform, non_interactive):
         raise click.Abort()
 
 
 @sbpack.command()
 @click.argument('project_id')
-@click.option('--token', '-t', help='CGC authentication token')
-def list_apps(project_id, token):
-    """List apps in a CGC project."""
+@click.option('--token', '-t', help='Authentication token')
+@click.option('--platform', '-p', default='cgc', help='Seven Bridges platform (cgc, sbg-us, sbg-eu, biodata-catalyst, cavatica)')
+@click.option('--non-interactive', is_flag=True, help='Run in non-interactive mode (no prompts)')
+def list_apps(project_id, token, platform, non_interactive):
+    """List apps in a Seven Bridges project."""
     manager = SBPackManager()
-    apps = manager.list_apps(project_id, token)
+    apps = manager.list_apps(project_id, token, platform, non_interactive)
     
     if not apps:
-        console.print("No apps found or failed to retrieve apps.")
+        if not non_interactive:
+            console.print("No apps found or failed to retrieve apps.")
         return
     
-    console.print(f"\n[bold]Apps in project {project_id}:[/bold]\n")
+    console.print(f"\n[bold]Apps in project {project_id} on {platform}:[/bold]\n")
     for app in apps:
         name = app.get('name', 'Unknown')
         app_id = app.get('id', 'Unknown')
@@ -327,11 +334,19 @@ def install():
 
 
 @sbpack.command()
-def logout():
-    """Remove stored CGC credentials."""
+def configure():
+    """Configure authentication tokens for Seven Bridges platforms."""
     manager = SBPackManager()
-    manager.cred_manager.delete_credential('cgc', 'auth_token')
-    console.print("[bold green]CGC credentials removed[/bold green]")
+    manager.configure_platforms()
+
+
+@sbpack.command()
+@click.option('--platform', '-p', default='cgc', help='Seven Bridges platform to logout from')
+def logout(platform):
+    """Remove stored credentials for a Seven Bridges platform."""
+    manager = SBPackManager()
+    manager.cred_manager.delete_credential(platform, 'auth_token')
+    console.print(f"[bold green]{platform} credentials removed[/bold green]")
 
 
 @main.command()

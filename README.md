@@ -18,9 +18,13 @@ OWLKit is a developer-first command-line toolkit that unifies Docker, CWL workfl
   
 - **Seven Bridges Integration**
   - Pack CWL workflows with sbpack
-  - Deploy to Cancer Genomics Cloud (CGC)
+  - Deploy to multiple Seven Bridges platforms:
+    - Cancer Genomics Cloud (CGC)
+    - Seven Bridges Platform (US & EU)
+    - BioData Catalyst
+    - Cavatica
   - Validate packed workflows
-  - List and manage CGC apps
+  - List and manage apps across platforms
   
 - **Developer Experience**
   - Unified CLI interface for multiple tools
@@ -121,7 +125,70 @@ owlkit sbpack install
 
 # Remove stored credentials
 owlkit sbpack logout
+
+# Configure multiple platforms
+owlkit sbpack configure
+
+# Use specific platform
+owlkit sbpack deploy workflow.cwl project/name app-name --platform sbg-us
+owlkit sbpack list-apps project-name --platform biodata-catalyst
+
+# Non-interactive mode for CI/CD
+export SB_CGC_TOKEN="your-token"
+owlkit sbpack deploy workflow.cwl project app --platform cgc --non-interactive
 ```
+
+#### Multi-Platform Support
+
+OWLKit supports all Seven Bridges platforms. Configure once, deploy anywhere:
+
+```bash
+# Interactive configuration for all platforms
+owlkit sbpack configure
+
+# This will prompt you to set up tokens for:
+# - cgc: Cancer Genomics Cloud
+# - sbg-us: Seven Bridges Platform (US)
+# - sbg-eu: Seven Bridges Platform (EU)
+# - biodata-catalyst: NHLBI BioData Catalyst
+# - cavatica: Cavatica (pediatric data)
+
+# Deploy to specific platforms
+owlkit sbpack deploy workflow.cwl username/project app-name --platform cgc
+owlkit sbpack deploy workflow.cwl username/project app-name --platform sbg-eu
+owlkit sbpack deploy workflow.cwl username/project app-name --platform biodata-catalyst
+
+# List apps on different platforms
+owlkit sbpack list-apps username/project --platform cgc
+owlkit sbpack list-apps username/project --platform cavatica
+
+# Platform-specific logout
+owlkit sbpack logout --platform sbg-us
+```
+
+#### Real-World Success Example
+
+**Deploying gdc-uploader to CGC:**
+```bash
+# Login and store CGC token
+owlkit sbpack login
+
+# Prepare workflow
+owlkit sbpack pack /workspaces/gdc-uploader/cwl/gdc_upload.cwl --output gdc-uploader-packed.cwl --validate
+
+# Deploy to CGC project
+owlkit sbpack deploy gdc-uploader-packed.cwl szotcs/mp2prt-ec gdc-uploader-owlkit-test
+
+# Result: Successfully deployed!
+# App ID: szotcs/mp2prt-ec/gdc-uploader-owlkit-test
+# Status: Available in CGC for workflow execution
+```
+
+**What happens behind the scenes:**
+1. Sets up `~/.sevenbridges/credentials` file automatically
+2. Validates CWL workflow structure  
+3. Calls `sbpack cgc szotcs/mp2prt-ec/gdc-uploader-owlkit-test workflow.cwl`
+4. Deploys using Docker image `ghcr.io/open-workflow-library/gdc-uploader:latest`
 
 ### Docker/GHCR Commands
 
@@ -150,6 +217,34 @@ owlkit docker images
 # Logout
 owlkit docker logout
 ```
+
+## CI/CD Integration
+
+OWLKit supports non-interactive mode for automated deployments:
+
+```bash
+# Set credentials via environment variables
+export SB_CGC_TOKEN="your-cgc-token"
+export SB_SBG_US_TOKEN="your-sbg-token"
+
+# Deploy without prompts (fails if no token)
+owlkit sbpack deploy workflow.cwl project/name app-name \
+  --platform cgc \
+  --non-interactive
+
+# Use in GitHub Actions
+- name: Deploy to CGC
+  env:
+    SB_CGC_TOKEN: ${{ secrets.CGC_TOKEN }}
+  run: |
+    owlkit sbpack deploy workflow.cwl \
+      my-project/workflows \
+      my-app-${{ github.sha }} \
+      --platform cgc \
+      --non-interactive
+```
+
+See [Non-Interactive Mode Guide](docs/NON-INTERACTIVE-MODE.md) for detailed CI/CD examples.
 
 ## Why Choose OWLKit?
 

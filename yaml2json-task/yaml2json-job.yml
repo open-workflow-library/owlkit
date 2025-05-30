@@ -1,0 +1,3 @@
+yaml_file:
+  class: File
+  path: /workspaces/gdc-uploader/zed/manifest.yaml
