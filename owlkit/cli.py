@@ -28,11 +28,18 @@ def docker():
 
 
 @docker.command()
-@click.option('--username', '-u', help='GitHub username or organization (auto-detected in Codespaces)')
-@click.option('--token', '-t', help='GitHub token')
+@click.option('--username', '-u', help='YOUR GitHub username (not organization name)')
+@click.option('--token', '-t', help='GitHub Personal Access Token with write:packages scope')
 @click.option('--force-pat', is_flag=True, help='Force PAT input even in Codespaces')
 def login(username, token, force_pat):
-    """Login to GitHub Container Registry."""
+    """Login to GitHub Container Registry.
+    
+    Examples:
+        owlkit docker login -u johndoe -t ghp_xxxx
+        owlkit docker login -u johndoe  # Will prompt for token
+    
+    Note: Use YOUR personal GitHub username, not an organization name.
+    """
     ghcr = GHCRManager(username)
     
     if force_pat and not token:
